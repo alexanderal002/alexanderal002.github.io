@@ -1,16 +1,3 @@
-var myImage = document.querySelector('img');
-
-//this is the block for making Mozilla=IE memes
-
-myImage.onclick = function() {
-    var mySrc = myImage.getAttribute('src');
-    if(mySrc === 'images/firefox-icon.png') {
-      myImage.setAttribute ('src','images/ie.png');
-    } else {
-      myImage.setAttribute ('src','images/firefox-icon.png');
-    }
-}
-
 //these are the referencers for the change user button and the heading
 
 var myButton = document.querySelector('button');
