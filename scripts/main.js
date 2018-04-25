@@ -17,9 +17,9 @@ var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 
 function setUserName() {
-	var myName = prompt('Please enter your name.');
+	var myName = prompt('Hi! This must be your first time here. In order to create a more personalized experience on my page, please enter your name (or at least whatever you would like to be referred to).');
 	localStorage.setItem('name', myName);
-	myHeading.textContent = 'Microsoft Edge is cool, ' + myName + '.';
+	myHeading.textContent = 'Welcome to the home base, ' + myName + '!';
 }
 
 //this is the block that structures the app for the naming code
@@ -28,7 +28,7 @@ if(!localStorage.getItem('name')) {
 	setUserName();
 }	else	{
 	var storedName = localStorage.getItem('name');
-	myHeading.textContent = 'We demand BitCoin, ' + storedName + '. Your computer is ours until we receive this.';
+	myHeading.textContent = 'Welcome back, ' + storedName + '!';
 }
 
 //and this ties the whole thing together, making the button do the damn thing
