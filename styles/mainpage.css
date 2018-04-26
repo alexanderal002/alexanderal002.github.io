@@ -1,43 +1,84 @@
 html {
-  font-size: 10px;
-  font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-
 h1 {
-  font-size: 60px;
-  text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    color: #E2925D;
+    text-shadow: 1px 1px 1px black;
+    font-size: 4vw;
+    text-align: center;
 }
 
 p, li {
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 2;
-  letter-spacing: 1px;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+    letter-spacing: 1px;
 }
 
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li.nav {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 html {
-  background-color: #5DADE2;
+    background-color: #5DADE2;
 }
 
 
 body {
-  width: 600px;
-  margin: 5px auto;
-  background-color: #6BE25D;
-  padding: 0 20px 20px 20px;
-  border: 5px solid white;
+    font-size: 100%;
+    width: 90%;
+    margin: 5px auto;
+    background-color: #6BE25D;
+    padding: 0 20px 20px 20px;
+    border: 5px solid white;
 }
 
-h1 {
-  margin: 0;
-  padding: 20px 0;  
-  color: #E2925D;
-  text-shadow: 1px 1px 1px black;
-}
 
 img {
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
